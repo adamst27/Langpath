@@ -31,7 +31,7 @@ const page = async () => {
 
   const calculateTotalProgress = () => {
     let totalProgress = 0;
-    userPlans.forEach((plan) => {
+    userPlans.forEach((plan: any) => {
       const planProgress = calculatePlanProgress(plan);
       totalProgress += planProgress;
     });
